@@ -1,0 +1,21 @@
+require:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  TargetRubyVersion: 3.0.0
+  NewCops: enable
+  Exclude:
+    - bin/**
+    - db/**/*
+    - config/**/*
+    - node_modules/**/*
+    - spec/controllers/**/*
+    - spec/services/**/*
+    - Rakefile
+
+Style/Documentation:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 120
