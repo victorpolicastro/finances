@@ -28,9 +28,34 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
+# Bootstrap 4 rubygem for Rails / Sprockets / Hanami / etc
+gem 'bootstrap'
+# Flexible authentication solution for Rails with Warden.
+gem 'devise'
+# The font-awesome font bundled as an asset for the rails asset pipeline
+gem 'font-awesome-rails'
+# A gem to automate using jQuery with Rails
+gem 'jquery-rails'
+# Rack-based asset packaging system
+gem 'sprockets'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Factory Bot <3 Rails
+  gem 'factory_bot_rails'
+  # A library for generating fake data such as names, addresses, and phone numbers.
+  gem 'faker'
+  # RSpec for Rails 5+
+  gem 'rspec-rails'
+  # A Ruby static code analyzer and formatter, based on the community Ruby style guide.
+  gem 'rubocop'
+  # A RuboCop extension focused on enforcing Rails best practices and coding conventions.
+  gem 'rubocop-rails'
+  # Code style checking for RSpec files
+  gem 'rubocop-rspec'
+  # A gem providing "time travel", "time freezing", and "time acceleration" capabilities
+  gem 'timecop'
 end
 
 group :development do
@@ -48,6 +73,10 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
+  # Simple one-liner tests for common Rails functionality
+  gem 'shoulda-matchers'
+  # Code coverage for Ruby with a powerful configuration library and automatic merging of coverage across test suites
+  gem 'simplecov'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
